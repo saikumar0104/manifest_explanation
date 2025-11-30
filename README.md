@@ -1,18 +1,18 @@
 Deployement Manifest: Explanation
 Components Explained
 
-[1]apiVersion: apps/v1
+[1] apiVersion: apps/v1
 Kubernetes API version used for Deployments.
 
-[2]kind: Deployment
+[2] kind: Deployment
 Declares the resource type. Deployment manages pods and ReplicaSets.
 
-[3]metadata
+[3] metadata
 name → Deployment name (weather-app)
 namespace → Namespace (weather)
 labels → Key-value pairs to identify and organize resources
 
-[4]spec
+[4] spec
 Defines the desired state of the Deployment.
 
 replicas
@@ -113,17 +113,17 @@ Inside template.spec (the Pod spec):
 
 Components Explained
 
-[1]apiVersion: v1
+[1] apiVersion: v1
 Core Kubernetes API version used for Services.
 
-[2]kind: Service
+[2] kind: Service
 Declares this resource as a Service.
 
-[3]metadata
+[3] metadata
 name → Service name (weather-service)
 namespace → Namespace (weather)
 
-[4]spec
+[4] spec
 Desired state of the Service.
 
 selector
